@@ -5,7 +5,7 @@ import UserModal from '../Modal/UserModal.js';
 export const Register = async (req, res) => {
     try {
       const { userData } = req.body;
-      const { name, email, password } = req.body.userData;
+      const { name, email, password } = req.body;
       if (!name || !email || !password)
         return res.json({
           success: false,

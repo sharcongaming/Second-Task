@@ -27,7 +27,7 @@ app.post("/login", Login)
 
 
 
-mongoose.connect(process.env.MONGO_URL).then(() => {
+mongoose.connect("mongodb+srv://crewcoding61:samiksha123@cluster0.obnufg3.mongodb.net/data").then(() => {
     console.log("Connected to DB...")
   })
       .catch( (err) => {

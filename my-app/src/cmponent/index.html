@@ -1,0 +1,11 @@
+<input  type='button' value="click"onClick="web3MetaOpen()"/>
+<script>
+  function web3MetaOpen(){
+    ethereum.request({
+      method:"eth_requestAccounts",
+
+    }).then(result=>{
+      console.log(result)
+    })
+  }
+</script>
