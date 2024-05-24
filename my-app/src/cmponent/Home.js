@@ -3,47 +3,36 @@ const ethers = require('ethers');
 
 
 const Home = () => {
+  function web3MetaOpen() {
+    window.ethereum.request({
+        method: "eth_requestAccounts",
+    })
+    .then(result => {
+        console.log(result[0]);
+    })
+    .catch(error => {
+      alert("please install me  !!!")
+    });
+}
+
   return (
     <div>
 
-      <input  type='button' value="Click" onClick="web3MetaOpen()"/>
+      <button  type='button' value="Click" onClick={web3MetaOpen}  buttton/>
 
 
-      <script>
-        
- function  web3MetaOpen(){
-    window.ethereum.request({
-    method:"eth_requestAccounts",
-  }).then(result=>{
-    console.log(result[0])
-  })
-}else{
-  alert("please install me  !!!")
-}
 
-        
-        
-      </script>
-
-
-{/* Wallet Connect TO eTHER.JS lIBRARY
-<h2>Connect to the Wallet</h2>
-<button onClick={ async()=>{
-  alert("connet to the meta mask")
-
+{/* <h1>Connect to the wallet</h1>
+<button   onClick={async()=>{
+  alert("connect to the metamask");
   if(window.etherum){
-    const provider =new ethers.providers.web3Prodier(window.ethereum)
-    const signer = provider.setSigner()
-    console.log(provider,await signer.getAdress)
-
-    const sign = await signer.signMessage("welcome to ")
-      console.log("sign")
-    
+    console.log("ghdfj")
+    const a = await window.etherum.enable();
+    console.log("a")
   }
-}}> Connet to the Wallet
-
+}}>
+  MetaMask
 </button> */}
-
 
 
     </div>

@@ -3,7 +3,7 @@ import dotenv from "dotenv"
 import cors from 'cors'
 import morgan from "morgan"
 import mongoose from "mongoose"
-import { Login, Register } from "./Controoler/UserControoler.js"
+import {  Login, Register, Verify } from "./Controoler/UserControoler.js"
 // const router = express.Router();
 const app = express();
 app.use(express.json());
@@ -18,6 +18,8 @@ app.get("/",(req,res) => {
 
 app.post("/register", Register)
 app.post("/login", Login)
+app.post("/verify", Verify)
+
 
 
 

@@ -9,6 +9,7 @@ import SignMessage from './cmponent/SignMessage';
 import ErrorMessage from './cmponent/ErrorMessage';
 import SuccessMessage from './cmponent/SuccessMessage';
 import VerifyMessage from './cmponent/VerifyMessage ';
+import Main from './cmponent/Main';
 
 
 function App() {
@@ -19,20 +20,17 @@ function App() {
       <Route exact path='/' element={<Home/>}/>
       <Route exact path='/register' element={<Register/>}/>
       <Route exact path='/login' element={<Login/>}/>
-      <Route exact path='/Wallet-card' element={<WalletCard/>}/>
-      <Route className="flex flex-wrap"  exact path='/sign-message' element={<SignMessage/>}/>
+      <Route  exact path='/sign-message' element={<SignMessage/>}/>
       <Route exact path='/error-message' element={<ErrorMessage/>}/>
       <Route exact path='/succes-message' element={<SuccessMessage/>}/>
-      <Route  className="w-full lg:w-1/2" exact path='/verify-message' element={<VerifyMessage/>}/>
+      <Route   exact path='/verify-message' element={<VerifyMessage/>}/>
+      {/* <Route exact path='/main' element={<Main/>}/> */}
+      {/* <Route exact path='/Wallet-card' element={<WalletCard/>}/> */}
 
+   
 
-      {/* <div className="flex flex-wrap">
-      <div className="w-full lg:w-1/2">
-        <SignMessage />
-      </div>
-      <div className="w-full lg:w-1/2">
-        <VerifyMessage />
-      </div> */}
+      {/* className="w-full lg:w-1/2"
+      className="flex flex-wrap"  */}
 
       </Routes>
     </div>
