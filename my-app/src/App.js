@@ -20,10 +20,10 @@ function App() {
       <Route exact path='/' element={<Home/>}/>
       <Route exact path='/register' element={<Register/>}/>
       <Route exact path='/login' element={<Login/>}/>
-      <Route  exact path='/sign-message' element={<SignMessage/>}/>
+      {/* <Route  exact path='/sign-message' element={<SignMessage/>}/>
       <Route exact path='/error-message' element={<ErrorMessage/>}/>
       <Route exact path='/succes-message' element={<SuccessMessage/>}/>
-      <Route   exact path='/verify-message' element={<VerifyMessage/>}/>
+      <Route   exact path='/verify-message' element={<VerifyMessage/>}/> */}
       {/* <Route exact path='/main' element={<Main/>}/> */}
       {/* <Route exact path='/Wallet-card' element={<WalletCard/>}/> */}
 

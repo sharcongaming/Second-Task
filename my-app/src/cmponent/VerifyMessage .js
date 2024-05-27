@@ -18,6 +18,11 @@
 //   }
 // };
 
+
+// // const ethers = require('ethers');
+// // console.log(ethers.version);
+
+
 // export default function VerifyMessage() {
 //   const [error, setError] = useState();
 //   const [successMsg, setSuccessMsg] = useState();
