@@ -1,6 +1,8 @@
 import React from 'react'
 const ethers = require('ethers');
-
+// import { ethers } from 'ethers';
+const { providers } = ethers;
+const provider = new providers.JsonRpcProvider();
 
 const Home = () => {
   function web3MetaOpen() {
@@ -17,24 +19,9 @@ const Home = () => {
 
   return (
     <div>
+      <input   type='button' value="Click" onClick={web3MetaOpen} />
 
-      <button  type='button' value="Click" onClick={web3MetaOpen}  buttton/>
-
-
-
-{/* <h1>Connect to the wallet</h1>
-<button   onClick={async()=>{
-  alert("connect to the metamask");
-  if(window.etherum){
-    console.log("ghdfj")
-    const a = await window.etherum.enable();
-    console.log("a")
-  }
-}}>
-  MetaMask
-</button> */}
-
-
+      {/* <button  type='button' value="Click" onClick={web3MetaOpen}  buttton/> */}
     </div>
   )
 }
