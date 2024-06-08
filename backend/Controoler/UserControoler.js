@@ -147,9 +147,9 @@ export const Verify = async (req, res) => {
 
     // Verify if the nonce is valid
     if (nonces[recoveredAddress] === siweMessage.nonce) {
-      // Successful login, generate a JWT or session token
-      const user = { address: recoveredAddress }; // Fetch user data
-      const token = generateToken(user); // Replace with your token generation logic
+    
+      const user = { address: recoveredAddress }; 
+      const token = generateToken(user); 
       res.json({ token });
     } else {
       res.status(401).json({ message: 'Invalid nonce' });
