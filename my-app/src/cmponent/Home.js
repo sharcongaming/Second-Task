@@ -66,6 +66,6 @@ const Home = () => {
 //       {/* <button  type='button' value="Click" onClick={web3MetaOpen}  buttton/> */}
 //     </div>
 //   )
-// }
+ }
 
-export default Home
+export default Home;
